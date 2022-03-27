@@ -1,0 +1,2199 @@
+
+/*----------Definiciones generales para todo el doc----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Yeseva+One&display=swap');
+
+
+*{
+	font-family: 'Poppins', sans-serif;
+   margin: 0;
+	padding: 0;
+	line-height: 2rem;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+
+body {
+	background-image: url(../img/fondo.jpg);
+	background-repeat: repeat;
+	overflow-x: hidden;
+}
+/*----------------grid----------------------*/
+
+/* mobile index 1 columna 6 filas*/
+@media only screen and (min-width:320px) {
+	.contentedor1{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 85vw;
+	grid-template-rows: 15vh 52vh 36vh 40vh 18vh 20vh;
+	grid-template-areas: "header" "main" 
+	"video" "formulario" "formulario2" "footer";
+	}
+}
+
+
+@media only screen and (min-width:768px) {
+		.contentedor1{
+			display: grid;
+			grid-template-columns: 60vw 40vw;
+			grid-template-rows: 15vh 43vh 50vh 15vh 15vh;	
+			grid-template-areas: 
+			"header header"
+			"main video"
+			"formulario formulario2"
+			"formulario ." 
+			"footer footer";
+		}
+
+		#header.botonera{
+			padding: 1rem;
+			position: sticky;
+			top: 0;
+			display:  flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		#header.botonera ul{
+				list-style: none;
+				display: flex;
+				justify-content: space-around;
+		 }
+
+		 #header.botonera  ul li{
+				font-size: 2rem ;
+				margin-right: 1rem;
+				margin-top: 2em;
+				line-height: 2rem;
+		}
+
+		#header.logoMargin{
+			display:  flex;
+			align-items: flex-start;
+			margin:  auto ;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+		.width-40.nosotrosAlign{
+		display: flex;
+		flex-direction: column;
+		margin-left: 1rem;
+		margin-top: 0rem;
+		height: 30rem;
+		align-items: center;
+		width: 97%;
+		}
+
+		.bgDark.textCenter.titleFormat{
+		width: 80%;
+		margin: 1rem;
+		padding: 0rem;
+		font-size: 2rem ;
+		}
+
+		.bgLight.textCenter.titleFormat{
+		width: 80%;
+		margin: 1rem;
+		padding: 0rem;
+		font-size: 2rem ;
+		}
+
+		article.textFormat{
+				font-size: 1.0rem;
+				padding: 1rem;
+				border-left: 1rem;
+				line-height: 3rem;
+		}
+
+		.perfilForm.videoHeader.textCenter{
+			display: flex;
+			flex-direction: column;
+			align-content: flex-start;
+			margin-top: 13rem;
+			margin-right: 10rem;
+		}
+		h3.videoTitle{
+			width: 120%;
+			margin-top: -13rem;
+			text-decoration: underline;
+			display: flex;
+			flex-direction: column;
+		}
+		iframe.videoFormat{
+			width: 130%;
+			margin-left: 0rem;
+			margin-top: -10rem;
+		}
+
+		.bgMedium.titleFormat2{
+		font-size: 2rem;
+		margin-left: 2rem;
+		margin-top: 5rem;
+		width: 80%;
+		}
+
+		#contacto.width-40{
+			width: 80%;}
+
+		div.formularioDiv{
+			width: 57%;
+			margin-left: 2rem;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+		}
+		.formularioForm.formPersFormat{
+			width: 80%;
+			height: 22rem;
+			margin: 0.5rem;
+			font-size: 1.5rem;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+		}
+
+		legend.titleFormSmall{
+			width: 100%;
+			margin-left: 1rem;
+			height: 3rem;
+			font-size: 2rem;
+			padding: 0.3rem;		
+			margin-bottom: 0.2rem;
+		}
+		.formularioForm.formPersFormat label{
+		font-size: 1rem;
+		margin: 0.7rem;
+
+		}
+
+		.helpForm.formHelpFormat{
+			display: flex;
+			flex-direction: row;
+			height: 14rem;
+			margin-left: 2rem;
+			margin-top: 2rem ;
+			align-items: center;
+			align-content: center;
+			justify-items: space-between ;
+			padding: 0rem;
+			background-color: transparent;
+			border:  transparent;
+		}
+
+		div.titleFormSmall1{
+			list-style: none;
+			display: flex;
+			flex-direction: column;
+			align-content: center;
+			align-items: center;
+			margin-left: 23rem;
+			margin-top: 2.5rem;
+			background-color: transparent ;
+			height: 3rem;
+			font-size: 2rem;
+			padding: 1.3rem;		
+		}
+		#servicio.textOption{
+				list-style: none;
+				font-size: 2rem;
+				margin-left: 1rem;
+				display: flex;
+				align-items: flex-start;
+				align-content: flex-start;
+		 }
+
+		 legend.titlecontacto{
+		 	width: 112%;
+			height: 4rem;
+			font-size:2rem;
+			line-height: 2rem;
+			text-align: left;	
+			align-items: flex-end;
+			align-content: flex-start;
+			margin-top: -5rem;
+			padding: 0.5rem;
+			background-color: rgba(77, 84, 84, 0.9);
+		 }
+
+			#footer.footer{
+				margin-top: 2rem;
+				width: 80%;
+
+			}
+
+			h3.footerTitle{
+			font-size: 3rem;
+			}
+
+			img.footImg{
+			width: 30%;
+			height: 3rem;
+		}
+
+		#formulario2.formularioDiv2{
+			display: flex;
+			flex-direction: column;
+			align-content: space-between;
+			font-size: 2.5rem;
+			width:110%;
+			margin-top: 11rem;	
+			height: 16rem;
+			margin-left: -11rem;
+		}
+
+		.textLeft.textBold.textItalic{
+			display: flex;
+			flex-direction: column;
+			margin-top: 2rem;
+		}
+
+		#mensaje.titleImputFormat{	
+			display: flex;
+			flex-direction: column;
+			width: 87%;
+			height: 8rem;
+			font-size: 2rem;
+			text-align: left;	
+			margin: 2rem;
+			padding: 4rem;
+			overflow: scroll;
+		}
+
+		div.botonFormulario{
+			display: flex;
+			flex-direction: row-reverse;
+			margin-top: -3rem;
+			padding: 2rem;
+			margin-left: 2rem;
+			margin-right: 2rem;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+
+		article.width-80{
+			background-color: #EBBCDC;
+		}
+}	
+
+/* media querie 1 index 1024 3columnas y 4 filas*/
+
+@media only screen and (min-width:1024px) {
+	.contentedor1{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 60vw 40vw;
+	grid-template-rows: 15vh 67vh 42vh 40vh 20vh ;
+	grid-template-areas: "header header" "main video"
+	"formulario formulario" 
+	"formulario formulario2" 
+	"footer footer";
+	}
+
+	#video.perfilForm.videoHeader.textCenter{
+		margin-right: 6rem;
+		margin-left: 5rem;
+		margin-top: 13rem;
+		width: 80%;
+	}
+	
+	h3.videoTitle{
+		font-size: 4rem;
+	}
+	
+	iframe.videoFormat{
+		width: 140%;
+		height: 32rem;
+	}
+
+	.width-40.nosotrosAlign{
+		margin-top: 2rem;
+		margin-left: 5rem;
+		margin-bottom: 2rem;
+		height: 39rem;
+	}
+
+	.bgDark.textCenter.titleFormat{
+		width: 93%;
+		margin-top: -1rem;
+		margin-bottom: 2rem;
+		margin-left: 5rem;
+	}
+
+	article.textFormat{
+		font-size: 1.5rem;
+		font-weight: 300;
+		height: 50rem;
+		margin-left: 1rem;
+		line-height: 3rem;
+		text-align: justify;
+		align-items: center;
+		padding: 1rem 0.5rem 1rem 0.5rem;
+		width: 99%;
+	}
+
+	.bgLight.textCenter.titleFormat{
+		width: 93%;
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		margin-left: 5rem;
+	}
+
+	.bgMedium.titleFormat2{
+		font-size: 3rem;
+		height: 4rem;
+		padding: 1rem 0.5rem 1rem 0.5rem;
+	}
+
+	.formularioForm.formPersFormat{
+		height: 24rem;
+	}
+
+	.formularioForm.formPersFormat label{
+		font-size: 2rem;
+	}
+
+	.helpForm.formHelpFormat{
+		display: flex;
+		background-color: #889999;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-top: 5rem;
+		margin-left: 33rem;
+		height: 13rem;
+	}
+	legend.titleFormSmall{
+		padding: 0.3rem;
+		margin-top: -2rem;
+		margin-left: 2rem;
+	}
+
+	#servicio.textOption{
+			margin-left: 2rem;
+	}
+	div.titleFormSmall1{
+		margin-top: -2rem;
+		text-align: center;
+		margin-left: 3rem;
+	}
+
+	legend.titlecontacto{
+			width: 70%;
+			margin-left: 25rem;
+			margin-top: -3rem;
+	}
+
+	div.caja2{
+		margin-top: -1rem;
+		margin-left: 19rem;
+		justify-content: space-between;
+		align-content: space-between;
+		justify-items: stretch;
+	}
+	#formulario2.formularioDiv2{
+		width: 137%;
+		margin-top: 11rem;
+	}
+}
+
+/* grid 2 dentro de index*/
+
+.caja2{
+	display: grid;
+	grid-template-columns: 5vh 5vh;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"email telefono" 
+	"selector1 selector2";	
+	grid-gap: 0.5rem 0.5rem ;
+	margin-top: 1rem;
+	margin-right: 8rem;
+	justify-items: center;
+	justify-content: start;
+	align-items: center;
+	align-content: center;
+
+}
+/*------------------------Deco y arreglos media querie-------*
+/* 320*/
+
+@media only screen and (min-width:320px) {
+	.cajaA{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 85vw;
+	grid-template-rows: 13vh 23vh 20vh 17vh 18vh;
+	grid-template-areas: "header1" "imagen" 
+	"deco" "profesionales" "footer1";
+	grid-gap: 2rem ;
+	}
+
+	#header1{
+		height: 11rem;
+		width: 117%
+
+
+	}
+	#header1 img.logoMargin{
+		display: flex;
+		width: 60%;
+		margin-left: 5rem;
+	}
+
+	#header1 ul{
+		margin-top: 0rem;
+	}
+
+	.textCenter.textBold.sizeBg.bgDark.textMd{
+	margin-top: 1rem;
+	margin-left: 5rem;
+	font-size: 2rem;
+	}
+
+	#imagen{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	}
+	
+	div.decoImgFormat{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	margin-top: 1rem;
+	/*margin-left: 10rem;*/
+	width: 60%;
+	}
+
+
+	.titleMaterialesFormat.bgMedium{
+		width: 107%;
+		margin-left: 2rem;
+	}
+
+	#deco .formRubro{
+		width: 80%;
+		font-size: 2rem;
+		margin-top: -1rem;
+	}
+
+	#deco .textOption{
+		width: 80%;
+		font-size: 1.5rem;
+	}
+
+	#profesionales{
+		width: 60%;
+		font-size: 2rem;
+	}
+	#profesionales{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 5rem;
+	}
+
+	#profesionales .textCenter.textBold.textBg{
+		font-size: 3rem;
+		margin-left: 3rem;
+		text-decoration: underline;
+	}
+
+	#profesionales .listProfesionalDeco{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		font-size: 2rem;
+		margin-top: -1rem;
+	}
+
+	
+	#footer1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 15rem;
+	}
+
+	#footer1 .footer{
+		display: flex;
+	}
+
+	#footer1 .footerTitle{
+		justify-content: center;
+	}
+
+	#footer1 .footImg{
+	height: 5rem;
+	width: 89%;
+	margin-top: 2rem;
+	}
+}
+
+
+/*--------Deco y arreglos 768 ------------*/
+
+
+@media only screen and (min-width:768px){
+	.cajaA{
+		display: grid;
+		grid-template-columns: 80vw 20vw;
+		grid-template-rows:18h 50vh 30vh 25vh 15vh; 
+		grid-template-areas: 
+		"header1 header1" 
+		"imagen imagen" 
+		"deco deco"
+		"profesionales profesionales" 
+		"footer1 footer1";
+	}
+		#header1.botonera{
+			padding: 1rem;
+			position: sticky;
+			top: 0;
+			display:  flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		#header1.botonera ul{
+				list-style: none;
+				display: flex;
+				justify-content: space-around;
+		 }
+
+		 #header1.botonera  ul li{
+				font-size: 2rem ;
+				margin-right: 1rem;
+				margin-top: 2em;
+				line-height: 2rem;
+		}
+
+		#header1.logoMargin{
+			display:  flex;
+			align-items: flex-start;
+			margin:  auto ;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+
+	#imagen .textCenter.textBold.sizeBg.bgDark.textMd{
+		font-size: 3rem;
+	}
+
+ 	#imagen{
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+ 	}
+
+ 	#imagen div.decoImgFormat{
+ 	display: flex;
+ 	flex-direction: row;
+ 	flex-wrap: wrap;
+ 	justify-content: space-around;
+ 	}
+
+ 	#deco .titleMaterialesFormat.bgMedium{
+ 		width: 50%;
+ 		margin-left: 5rem;
+ 	}
+
+ 	#deco .formRubro{
+ 		height: 13rem;
+ 		font-size: 3rem;
+ 		text-align: left;
+ 		margin-top: 1rem;
+ 	}
+
+ 	#deco .textOption{
+ 		margin-top: 2rem;
+ 		height: 5rem;
+ 		font-size: 2rem;
+ 	}
+ 	#profesionales{
+ 		width: 100%;
+ 		font-size: 3rem;
+ 	}
+
+ 	#profesionales .listProfesionalDeco{
+ 		display: flex;
+ 		flex-direction: row;
+ 		flex-wrap: wrap;
+ 		justify-content: space-between;
+ 		margin-top: 2rem;
+ 		width: 100%; 	
+ 		font-size: 2.3rem;}
+
+ 	#footer1{
+	height: 20rem;
+	margin-left: 5rem;
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+	}
+
+	#footer1 .alinea{
+		width: 30%;
+	}
+
+	#footer1 .footImg{
+	height: 5rem;
+	width: 50%;
+	margin-top: 2rem;
+	}
+}
+
+/*---------------------deco y arreglos 1024--*/
+@media only screen and (min-width:1024px) {
+	.cajaA{
+	display: grid;
+	grid-template-columns: 60vw 40vw;
+	grid-template-rows: 17vh 28vh 15vh 21vh 20vh ;
+	grid-template-areas: "header1 header1"
+	"imagen imagen"
+	"deco deco" 
+	"profesionales profesionales" 
+	"footer1 footer1";
+	}
+
+	#header1{
+		width: 167%;
+	}
+
+	#imagen{
+		width: 148%;
+	}
+
+	#imagen .textCenter.textBold.sizeBg.bgDark.textMd{
+		font-size: 5rem;
+	}
+
+	#imagen div.decoImgFormat{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+	}
+	#deco{
+		width: 168%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	#deco .titleMaterialesFormat.bgMedium{
+		background-color: #73405B;
+		border-color: transparent;
+		height: 7rem;
+	}
+	#profesionales .listProfesionalDeco{
+		display: flex;
+		flex-direction: row;
+		border: 1px solid violet;
+		margin-left: 10rem;
+		width: 100%;
+	}
+
+}	
+
+/*-----------inversiones 320------------*/
+
+@media only screen and (min-width:320px) {
+	.cajaB{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 85vw;
+	grid-template-rows: 13vh 23vh 20vh 17vh 18vh;
+	grid-template-areas: "header2" "imagen2" 
+	"tipo" "interes" "footer2";
+	grid-gap: 2rem ;
+	}
+
+	#header2{
+		height: 11rem;
+		width: 117%
+
+
+	}
+	#header2 img.logoMargin{
+		display: flex;
+		width: 60%;
+		margin-left: 5rem;
+	}
+
+	#header2 ul{
+		margin-top: 0rem;
+	}
+
+	#imagen2{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-left: 2rem;
+	}
+	#imagen2 .textCenter.titleInversionesFormat{
+	font-size: 2rem;
+	width: 85%;
+	margin-left: 1rem;
+	}
+
+	#imagen2 .inversImgFormat.alignImg{
+		width: 74%;
+		margin-top: 0rem;
+		height: 12rem;
+	}
+
+	#tipo{
+	font-size: 1rem;
+	margin-left: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	}
+
+	#tipo .textLeft.bgMedium.titleFormat.perfilMargin2{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#tipo .textLeft.sizeBg{
+	    display: flex;
+    	flex-direction: row;
+    	flex-wrap: nowrap;
+    	margin-left: -2rem;
+    	font-size: 1rem;
+    	align-content: stretch;
+    	justify-content: space-evenly;
+    	align-items: center;
+   	 width: 171%;
+   	}
+
+   	#interes{
+   		margin-left: 3rem;
+   		width: 126%;
+   	}
+
+   	#interes .formPersFormat.textCenter.ajustePerfil{
+   		height: 16rem;}
+
+   	#footer2{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 15rem;
+	}
+
+	#footer2 .footer{
+		display: flex;
+		flex-direction: ;
+	}
+
+	#footer2 .footerTitle{
+		justify-content: center;
+	}
+
+	#footer2 .footImg{
+	height: 5rem;
+	width: 80%;
+	margin-top: 2rem;
+	}
+
+}
+
+/*------------------768 inversiones -------------*/
+
+@media only screen and (min-width:768px){
+	.cajaB{
+		display: grid;
+		grid-template-columns: 80vw 20vw;
+		grid-template-rows:18h 50vh 30vh 25vh 15vh; 
+		grid-template-areas: 
+		"header2 header2" 
+		"imagen2 imagen2"
+		"tipo tipo" 
+		"interes interesa"
+		"footer2 footer2";
+	}
+		#header2.botonera{
+			padding: 1rem;
+			position: sticky;
+			top: 0;
+			display:  flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 120%;
+		}
+		
+		#header2.botonera ul{
+				list-style: none;
+				display: flex;
+				justify-content: space-around;
+		 }
+
+		 #header2.botonera  ul li{
+				font-size: 2rem ;
+				margin-right: 1rem;
+				margin-top: 2em;
+				line-height: 2rem;
+		}
+
+		#header2.logoMargin{
+			display:  flex;
+			align-items: flex-start;
+			margin:  auto ;
+			box-sizing: border-box;
+			text-decoration: none;
+		}
+
+		#imagen2{
+			width: 112%;
+		}
+
+		#imagen2 .textCenter.titleInversionesFormat{
+			width: 60%;
+			height: 10rem;
+			text-align: left;
+			font-size: 3rem;
+			border: transparent;
+			text-decoration: underline;
+
+		}
+		#imagen2 .inversImgFormat.alignImg{
+		height: 23rem;
+		}
+
+		#tipo .textLeft.bgMedium.titleFormat.perfilMargin2{
+			font-size: 3rem;
+			text-align: center;
+			width: 114%;
+			background-color: darksalmon;
+		}
+
+		#tipo .textLeft.sizeBg{
+			margin-top: 3rem;
+			font-size: 2rem;
+			list-style-type: square;
+			width: 156%;
+			background-color: rgba(224, 200, 188, 0.3);
+		}
+		
+		#interes .textLeft.bgMedium.titleFormat.perfilMargin{
+			font-size: 3rem;
+			background-color: #E8E3C8;
+			border: transparent;
+			text-align: center;
+			width: 80%;
+
+		}
+
+		#interes .formPersFormat.textCenter.ajustePerfil{
+		font-size: 3rem;
+		}
+
+}
+
+/*-------------320 obra ------------------*/
+
+
+@media only screen and (min-width:320px) {
+	.cajaC{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 85vw;
+	grid-template-rows: 11vh 23vh 20vh 17vh 17vh 18vh;
+	grid-template-areas: "header3" "imagen3" 
+	"materiales" "profesionales3" "convenio" "footer3";
+	grid-gap: 2rem ;
+	}
+
+	#header3{
+		height: 9rem;
+		width: 125%
+	}
+
+	#header3 img.logoMargin{
+		display: flex;
+		width: 65%;
+		margin-left: 1rem;
+	}
+
+	#header3 ul{
+		font-size: 2rem;
+		margin-top: -2rem;
+		margin-left: 2rem;
+	}
+
+	#imagen3{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin-left: 2rem;
+		margin-top: 3rem;
+	}
+
+	#imagen3 .titleFormSmall{
+		font-size: 2.1rem;
+	}
+
+	#imagen3{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	}
+	
+	#imagen3 .obraImgFormat{
+	margin-top: -1.5rem;
+	}
+
+	#materiales .titleMaterialesFormat{
+		font-size: 2rem;
+		width: 86%;
+		height: 5rem;
+		margin-top: -1rem;
+		padding-top: 1rem;
+		margin-left: 3rem;
+	}
+
+	#materiales .tableMateriales{
+		font-size: 1rem;
+		margin-left: 3.4rem;
+		padding: 0.1rem;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+		background-color: rgb(148, 201, 135);
+	}
+
+	#materiales .tableMateriales tr{
+	 border: solid 1px black;
+	}
+
+	#materiales .tableMateriales th{
+	 border: solid 1px black;
+	}
+	#materiales .tableMateriales td{
+	 border: solid 1px black;
+	}
+
+	#profesionales3 .titleMaterialesFormat{
+		font-size: 2rem;
+		width: 86%;
+		height: 5rem;
+		margin-top: -1rem;
+		padding-top: 1rem;
+		margin-left: 3.4rem;
+	}
+
+	#profesionales3 .listProfesionalFormat{
+		font-size: 2rem;
+		margin-top: -3rem;
+		margin-left: 5.4rem;
+	}
+
+	#convenio .titleMaterialesFormat{
+		font-size: 2rem;
+		width: 86%;
+		height: 5rem;
+		margin-top: -1rem;
+		padding-top: 1rem;
+		margin-left: 3.4rem;
+	}
+
+	#convenio .listConveniosFormat{
+		font-size: 2rem;
+		margin-top: -3rem;
+		margin-left: 5.4rem;
+	}
+
+
+   	#footer3{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 15rem;
+	}
+
+	#footer3 .footer{
+		display: flex;
+		flex-direction: ;
+	}
+
+	#footer3 .footerTitle{
+		justify-content: center;
+	}
+
+	#footer3 .footImg{
+	height: 5rem;
+	width: 80%;
+	margin-top: 2rem;
+	}
+
+}
+
+/*---------768 en adelante obra -------------*/
+@media only screen and (min-width:768px){
+	.cajaC{
+		display: grid;
+		grid-template-columns: 80vw 20vw;
+		grid-template-rows:18h 50vh 30vh 25vh 25vh 15vh; 
+		grid-template-areas: 
+		"header3 header3" 
+		"imagen3 imagen3"
+		"materiales materiales" 
+		"profesionales3 profesionales3"
+		"convenio convenio"
+		"footer3 footer3";
+	}
+
+	#header3.botonera{
+		padding: 1rem;
+		position: sticky;
+		top: 0;
+		display:  flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 120%;
+	}
+		
+	#header3.botonera ul{
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+	}
+
+ 	#header3.botonera  ul li{
+		font-size: 2rem ;
+		margin-right: 1rem;
+		margin-top: 2em;
+		line-height: 2rem;
+	}
+
+	#header3.logoMargin{
+	 	display:  flex;
+		align-items: flex-start;
+		margin:  auto ;
+		box-sizing: border-box;
+		text-decoration: none;
+	}
+
+	#imagen3{
+		width: 112%;
+		height: 15rem;
+	}
+	#imagen3 .titleFormSmall{
+		width: 54%;
+		background-color: darkmagenta;
+	}
+	#imagen3 .obraImgFormat{
+		width: 60%;
+		height: 22rem;
+		text-align: left;
+		font-size: 3rem;
+		border: transparent;
+	}
+
+	#materiales .titleMaterialesFormat{
+		margin-top: 6rem;
+		background-color: #96A9B5;
+	}
+
+	#profesionales3 .titleMaterialesFormat{
+		background-color: #96A9B5;
+	}
+
+	#profesionales3{
+		display: flex;
+		flex-direction: column;
+
+	}
+
+	#profesionales3 .listProfesionalFormat{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		font-size: 1.4rem;
+		text-decoration-color: black;
+		font-weight: 500;
+	}
+
+	#convenio .titleMaterialesFormat{
+		background-color: #96A9B5;
+	}
+
+ 	#footer3{
+	height: 20rem;
+	margin-left: 5rem;
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+	}
+
+	#footer3 .alinea{
+		width: 30%;
+	}
+
+	#footer3 .footImg{
+	height: 5rem;
+	width: 50%;
+	margin-top: 2rem;
+	}
+}
+
+
+/*-------------320 tu credito -----------------------*/
+
+@media only screen and (min-width:320px) {
+	.cajaD{
+	width: 100%;
+	display: grid;
+	grid-template-columns: 85vw;
+	grid-template-rows: 11vh 23vh 20vh 17vh 17vh 18vh;
+	grid-template-areas: "header4" "imagen4" 
+	"lineas" "requisitos" "documentacion" "footer4";
+	grid-gap: 2rem ;
+	}
+
+
+	#header4{
+		height: 10rem;
+		width: 115%
+	}
+
+	#header4 img.logoMargin{
+		display: flex;
+		width: 65%;
+		margin-left: 1rem;
+	}
+
+	#header4 ul{
+		width: 80%;
+		font-size: 3rem;
+		margin-top: -2rem;
+		margin-left: 2rem;
+	}
+
+	#imagen4{
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	}
+	
+	#imagen4 .creditoImgFormat{
+	margin-top: 1rem;
+	margin-left: 4rem;
+	width: 71%;
+	}
+
+	#lineas .titleLineasFormat{
+		font-size: 2rem;
+		margin-top: -2rem	;
+	}
+
+	#lineas .titleLineasFormat{
+		font-size: 2rem;
+		width: 86%;
+		height: 5rem;
+		margin-top: -1rem;
+		padding-top: 1rem;
+		margin-left: 3rem;
+	}
+
+	#lineas .tableMateriales{
+		font-size: 1rem;
+		margin-left: 3.4rem;
+		padding: 0.1rem;
+		align-items: center;
+		align-content: center;
+		text-align: center;
+		background-color: rgb(148, 201, 135);
+	}
+
+	#lineas .tableMateriales tr{
+	 border: solid 1px black;
+	}
+
+	#lineas .tableMateriales th{
+	 border: solid 1px black;
+	}
+	#lineas .tableMateriales td{
+	 border: solid 1px black;
+	}
+
+
+	#requisitos .titleMaterialesFormat{
+		font-size: 3rem;
+		border: transparent;
+		margin-top: -2rem;
+		margin-left: 7rem;
+		text-decoration: underline;
+		text-decoration-color: violet;
+	}
+
+	#requisitos .listProfesionalFormat{
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		font-size: 2rem;
+		margin-top: -5rem;
+		width: 60%;
+	}
+
+	#documentacion .titleMaterialesFormat{
+		font-size: 3rem;
+		border: transparent;
+		margin-top: -2rem;
+		margin-left: 7rem;
+		text-decoration: underline;
+		text-decoration-color: blue;
+	}
+
+
+	#documentacion .listProfesionalFormat{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		justify-content: space-between;
+		font-size: 1rem;
+		margin-top: -2rem;
+		list-style-type:  none;
+	}
+
+
+   	#footer4{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 15rem;
+	}
+
+	#footer4 .footer{
+		display: flex;
+		flex-direction: ;
+	}
+
+	#footer4 .footerTitle{
+		justify-content: center;
+	}
+
+	#footer4 .footImg{
+	height: 5rem;
+	width: 80%;
+	margin-top: 2rem;
+	}
+
+
+}
+
+
+/*---------768 en adelante obra -------------*/
+@media only screen and (min-width:768px){
+	.cajaC{
+		display: grid;
+		grid-template-columns: 80vw 20vw;
+		grid-template-rows:18h 50vh 30vh 25vh 25vh 15vh; 
+		grid-template-areas: "header4 header4" 
+		"imagen4 imagen4" 
+		"lineas lineas" 
+		"requisitos requisitos" 
+		"documentacion documentacion" 
+		"footer4 footer4";
+	}
+
+	#header4.botonera{
+		padding: 1rem;
+		position: sticky;
+		top: 0;
+		display:  flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 110%;
+	}
+		
+	#header4.botonera ul{
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+	}
+
+ 	#header4.botonera  ul li{
+		font-size: 2rem ;
+		margin-right: 1rem;
+		margin-top: 2em;
+		line-height: 2rem;
+	}
+
+	#header4.logoMargin{
+	 	display:  flex;
+		align-items: flex-start;
+		margin:  auto ;
+		box-sizing: border-box;
+		text-decoration: none;
+	}
+
+
+	#lineas .titleLineasFormat{
+		font-size: 3rem;
+		margin-top: 0rem	;
+	}
+
+	#requisitos .titleMaterialesFormat{
+	font-size: 3rem;
+	margin-left: -22rem;
+	}
+
+	#requisitos .listProfesionalFormat{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		width: 80%;}
+
+	#documentacion .listProfesionalFormat{
+		font-size: 2rem;
+		font-weight: 400;
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+	}
+
+}
+
+/*--------------id grid caja 1 ---------------------*/
+#header{
+	grid-area: header;	
+}
+
+#video{
+	grid-area: video;
+}
+
+#main{
+	grid-area: main;
+}
+
+#formulario{
+		grid-area: formulario;
+}
+
+#formulario2{
+		grid-area: formulario;
+}
+
+#footer{
+			grid-area: footer;
+}
+
+
+/*--------------id grid caja 2 ---------------------*/
+#email{
+	grid-area: email;	
+}
+
+#telefono{
+	grid-area: telefono;
+}
+
+#selector1{
+	grid-area: selector1;
+}
+
+#selector2{
+		grid-area: selector2;
+}
+
+/*---------------id grid caja A -----------------*/
+#header1{
+	grid-area: header1;
+}
+
+#imagen{
+	grid-area: imagen;	
+}
+
+#deco{
+	grid-area: deco;	
+}
+
+#profesionales{
+	grid-area: profesionales;	
+}
+
+#footer1{
+	grid-area: footer1;
+}
+/*---------------id grid caja B-------------*/
+
+#header2{
+	grid-area: header2;
+}
+
+#imagen2{
+	grid-area: imagen2;
+}
+
+#tipo{
+	grid-area: tipo;
+}
+
+#interes{
+	grid-area: interes;
+}
+
+#footer2{
+	grid-area: footer2;
+}
+
+/*---------------id grid caja B-------------*/
+
+#header3{
+	grid-area: header3;
+}
+
+#imagen3{
+	grid-area: imagen3;
+}
+
+
+#materiales{
+	grid-area: materiales;
+}
+
+#convenio{
+	grid-area: convenio;
+}
+
+#profesionales3{
+	grid-area: profesionales3;	
+}
+
+#footer3{
+	grid-area: footer3;
+}
+
+/*------------id grid caja D -----------------------*/
+
+#header4{
+	grid-area: header4;
+}
+
+#imagen4{
+	grid-area: imagen4;
+}
+
+
+#lineas{
+	grid-area: lineas;
+}
+
+#requisitos{
+	grid-area: requisitos;
+}
+
+#documentacion{
+	grid-area: documentacion;	
+}
+
+#footer4{
+	grid-area: footer4;
+}
+
+
+/*---------------Encabezado---------------- */
+
+.botonera{
+		background-color: rgba(250, 252, 252, 0.5);
+		/*padding: 1rem ;*/
+		text-decoration: none;
+		position: sticky;
+		/*top: 0;*/
+		display:  flex;
+		flex-direction: column;
+		/*justify-content: space-between; lo comento para mobile first*/
+		align-items: center;
+	}
+
+
+
+	.botonera ul{
+			list-style: none;
+			display: flex;
+			/*justify-content: space-around;lo comento para mobile first*/
+			margin-top: -2rem;
+		 }
+
+		.botonera  ul li{
+				font-size: 0.9rem ;
+			   margin-left: 1rem;
+			}
+
+			.botonera  ul li a{
+					color: grey;
+					text-decoration: none;		
+				}
+
+				.botonera ul li a:hover{	
+						font-weight: 500;
+						color: black;
+					}
+
+	.botonera a img{
+			font-size:1rem ;
+			width: 80%;
+			padding: 0;
+		}
+
+
+.logoMargin{
+	display:  flex;
+	/*align-items: flex-start;lo comento para mobile first*/
+	/*margin:  auto ;*/
+	box-sizing: border-box;
+	text-decoration: none;
+	width: 80%;
+	align-content: center;
+	align-items: center;
+	margin-left: 3rem;
+	height: 60%;
+	margin-top: 1rem;
+}
+
+/*.justifyItems{
+	justify-items: stretch;
+	align-content: center;
+}*/
+
+/*-------------video header ---------------*/
+
+.perfilForm{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: space-between; 
+	flex-direction: column;
+	align-items: center;
+	line-height: 2rem;
+	top: 0;
+}
+
+.videoTitle	{
+	color:  black;
+	font-weight: 500;
+	margin-top: 5.5rem;
+	font-size: 2rem ;
+	padding: 0rem;
+	text-align: center;
+	height: 0rem;
+	line-height: 4rem;
+	margin-left: 0rem;
+}
+
+
+.videoFormat{
+	width: 120%;
+	padding: 2rem;
+	height: 15rem;
+	margin-left: 6rem;
+	margin-top: 1rem;
+	align-items: center;
+}
+
+
+.videoHeader{
+	width: 60%;
+	height: 2rem;
+	padding: 0rem;
+	margin: 1.5rem;
+}
+
+
+
+/*---------Section Nosotros---------------*/
+
+	/*--Nosotros--*/
+
+.nosotrosAlign{
+	/*margin-left: 60rem;
+	margin-top: -3rem;lo comento para mobile first*/
+	display:  flex; 
+	flex-direction: column;
+	/*flex-wrap: wrap;lo comento para mobile first*/
+	/*justify-content: flex-start;lo comento para mobile first*/
+	/*align-items: flex-end;lo comento para mobile first*/
+	align-items: center;
+	margin: 0.5rem 0.5rem;
+}
+
+.titleFormat{
+	width: 60%;
+	margin: 1rem;
+	padding: 1rem;
+	color:  black;
+	font-weight: 500;
+	font-size: 2rem ;
+}
+
+.titleFormat2{
+	width: 60%;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	color:  black;
+	font-weight: 500;
+	font-size: 1.5rem ;
+	line-height: 2rem;
+}
+
+
+.textFormat{
+	width: 100%;
+	height: auto;
+	padding: 1rem;
+	font-size: 0.8rem;
+	text-align: center;
+	background-color: #889999;
+	color: rgb(60, 57, 61) ;
+}
+
+	/*--Formulario--*/
+
+.formularioForm{
+	display: flex;
+	flex-direction: column;
+	/*align-content: space-between; lo comento para mobile first*/
+/*	align-items: left;*/
+	align-items: center;
+	/*top: 0;*/
+	width: 40%;
+	justify-content: space-between;
+}
+.helpForm{
+	display: flex;
+	flex-direction: column;
+	/*align-content: space-between; lo comento para mobile first*/
+	align-items: center;
+	margin-right: 2rem;
+	width: 35%;
+	top: 0;
+}
+
+.selectionForm{
+	display: flex;
+	flex-direction: column;
+	/*align-content: space-between; lo comento para mobile first*/
+	align-items: center;
+}
+
+.formularioDiv{
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+	margin: -0.5rem;
+	padding: -0.5rem;
+	justify-content: flex-start;
+	/*align-content: space-between; lo comento para mobile first*/
+}
+
+
+.formularioDiv2{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2rem;
+	/*align-content: space-between; lo comento para mobile first*/
+}
+
+.titleFormSmall{
+	width: 75%;
+	height: 4rem;
+	font-size:1rem;
+	text-align: center;	
+	margin-top: -2.5rem;
+	padding: 0.5rem;
+	background-color: rgba(77, 84, 84, 0.9);
+}
+
+.titleFormSmall1{
+	width: 85%;
+	height: 4rem;
+	font-size:1rem;
+	text-align: center;	
+	margin-top: 1.5rem;
+		padding: 1.5rem;
+	background-color: rgba(77, 84, 84, 0.9);
+}
+
+.formPersFormat{		
+	width: 40%;
+	height: 19rem;
+	margin: 0.5rem;
+	padding: -3.5rem;
+	font-size: 1rem;
+	text-align: center;
+	background-color: #889999;
+}
+
+.formHelpFormat{		
+	width: 35%;
+	height: 8rem;
+	border: 0.1rem solid darkblue;
+	margin-top: 1.8rem;
+	margin-right: 2rem;
+	padding: -2.5rem;
+	font-size: 1rem;
+	text-align: left;
+	background-color: #889999;
+   vertical-align: top;
+}
+
+.formContactFormat{		
+	width: 40%;
+	height: 5rem;
+	margin: 1rem;
+	text-decoration: underline;
+	padding: 1rem;
+	font-size: 1rem;
+	text-align: left;
+	background-color: #E3D3E6;
+   vertical-align: top;
+}
+
+.alinea{
+	display: flex;
+	align-content: center;
+	/*justify-content: space-around;lo comento para mobile first*/
+	align-items: center;
+	padding: 0.5rem
+}
+
+
+	.alinea label{
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			/*text-align: left;lo comento para mobile first*/
+			text-align: center;
+			font-size: 0.5rem ;
+			margin-right: 1rem;
+			line-height: 2rem;
+			
+		 }
+
+
+.alinea2{
+	display: flex;
+	/*justify-content: space-between;lo comento para mobile first*/
+	/*top: 0;*/
+	align-items: center;
+	flex-direction: row;
+}
+
+	.alinea2 div {
+			list-style: none;
+			display: flex;
+			/*justify-content: space-around;lo comento para mobile first*/
+			align-items: center;
+		 }
+
+
+.contactoImg1{
+	text-decoration: none;
+	width: 40%;
+	margin-left: 5rem ;
+	/*justify-content: center;lo comento para mobile first*/
+	display: flex;
+   flex-direction: column;
+    align-content: center;
+}
+
+
+.contactoImg2{
+	text-decoration: none;
+	width: 25%;
+	/*justify-content: center;lo comento para mobile first*/
+	margin-right: 5rem ;
+	display: flex;
+  	flex-direction: column;
+  	align-content: center;
+}
+
+
+	/*--Imput texto --*/
+
+.titleImputFormat{		
+	width: 60%;
+	height: 4rem;
+	font-size: 2rem;
+	text-align: right;	
+	margin: 1rem;
+	padding: 1rem;
+	overflow: scroll;
+}
+
+.botonFormulario{
+	display: flex;
+	flex-direction: column-reverse;
+	margin-top: -6rem;
+	margin-right: 2rem;
+	/*justify-content: space-evenly;lo comento para mobile first*/
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+
+/*--------------footer------------------*/
+
+
+.footer{
+	text-decoration: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+
+.footerTitle{
+	color: #311D63;
+	font-size: 2rem;
+	justify-content: center;
+
+}
+
+.footImg{
+	text-decoration: none;
+	height: 2rem;
+	width: 20%;
+	margin-top: 2rem;
+}
+
+
+
+/*----------------La Obra ---------*/
+
+.obraImgFormat{
+	width: 65%;
+	padding: 3rem;
+}
+
+.titleMaterialesFormat{
+	width: 25%;
+	margin: 2rem;
+	padding: 2rem;
+	color:  #38353B;
+	font-weight: 500;
+	font-family: 'Yeseva One', cursive;
+	font-size: 3rem ;
+	border: double;
+}
+
+.tableMateriales {
+   width: 80%;
+   border: solid 1px black;
+   margin: 2rem;
+   font-size: 1.5rem ;
+}
+
+.materialesA{
+	color: black;
+}
+
+.materialesA tr  {
+	margin-left: -5rem;
+	padding: 2rem;
+   width: 25%;
+   text-align: center;
+   vertical-align: top;
+   border: 1px solid black;
+   background-color: #728776;
+}
+
+/*.materialesA tr td {
+	margin-left: -5rem;
+	padding: 2rem;
+   width: 25%;
+   text-align: center;
+   vertical-align: top;
+   border: 1px solid black;
+   background-color: #728776;
+}*/
+
+.listProfesionalFormat{
+	list-style-type: circle;
+	margin: 2rem;
+	padding: 2rem;
+	color:  #4B4749;
+	font-weight: 400;
+	font-size: 3rem ;
+	text-decoration: none;
+
+}
+
+.listProfesionalHover:hover{	
+			font-weight: 400;
+			color: black;
+			text-decoration: none;
+		}
+
+.listConveniosFormat{
+	list-style-type: decimal;	
+	margin: 2rem;
+	padding: 2rem;
+	color:  #722944;
+	font-weight: 400;
+	font-size: 3rem ;
+}
+
+/*----------tu credito--------------*/
+
+.creditoImgFormat{
+	width: 15%;
+	padding: 1rem;
+	margin-left: 100rem;
+}
+
+.titleLineasFormat{
+	width: 45%;
+	margin: 2rem;
+	padding: 2rem;
+	color:  #38353B;
+	font-weight: 500;
+	font-family: 'Yeseva One', cursive;
+	font-size: 5rem ;
+}
+
+/*----------------Deco y Arreglos------*/
+
+
+.decoImgFormat{
+	width: 40%;
+	padding: 1rem;
+	display: flex;
+	margin-left: 20% ;
+	vertical-align: text-top;
+}
+
+.formRubro{
+	width: 40%;
+	height: auto;
+	font-size: 2rem;
+	text-align: center;	
+	margin: 2rem;
+	padding: 2rem;
+	background-color: rgba(221, 247, 185, 1);
+}
+
+
+.listProfesionalDeco{
+	list-style: none;
+	display: flex;
+	margin: 2rem;
+	padding: 2rem;
+	color:  #4B4749;
+	font-weight: 400;
+	font-size: 3rem ;
+	text-decoration: none;
+}
+
+.textOption{
+	font-family: 'Yeseva One', cursive;
+	font-size: 1rem ;
+	color: #4B4C4B;
+}
+
+/*----------------Inverti---------*/
+
+.titleInverti{
+	list-style: none;
+	display: inline-block;
+	padding: 2rem;
+	color:  #4B4749;
+	font-weight: 500;
+	font-size: 2rem ;
+	text-decoration: none;
+	text-align: right;
+	margin-left: -1rem ;
+	margin-top: 0rem;
+	vertical-align: middle;
+}
+
+.alignImg{
+	margin-top: -15rem;	
+	width: 50%;
+}
+
+.ajustefooter{
+	width: 0%;
+}
+
+.perfilMargin{
+	margin-top: 1rem;	
+}
+
+.perfilMargin2{
+	margin-top: -2.9rem;	
+	margin-left: -2rem;
+}
+
+
+.inversImgFormat{
+	width: 45%;
+	padding: 2rem;
+	height: 30rem;
+	margin-top: -10rem;
+}
+
+
+.ajustePerfil{
+	width: 80%;
+}
+
+.heightTipos{
+	line-height: 5rem;
+}
+
+.titleFormMd{
+	width: 80%;
+	height: auto;
+	font-size: 2rem;
+	text-align: center;	
+	margin: 2rem;
+	padding: 2rem;
+	font-weight: 500 ;
+	color: black;
+	background-color: rgba(77, 84, 84, 0.9);
+}
+
+
+.titleInversionesFormat{
+	width: 40%;
+	padding: 2rem;
+	color:  #38353B;
+	font-weight: 500;
+	font-family: 'Yeseva One', cursive;
+	font-size: 3rem ;
+	border: double;
+	margin-left: 5rem;
+	margin-top: 2rem;
+	margin-bottom: -10rem;
+}
+
+
+/*---------------Selectores generales------------------*/
+
+.bgDark{
+	background-color: rgba(224, 224, 209, 0.7);
+}
+
+.bgLight{
+	background-color: rgba(221, 235, 235, 0.9);
+}
+
+.bgMedium{
+	background-color: #E6E8E8;
+}
+
+
+.textCenter{
+	text-align: center;
+}
+
+.textLeft{
+text-align: left;
+}
+
+.textRight{
+	text-align: right;
+}
+
+
+.textBold{
+	font-weight: 500 ;
+}
+
+.textItalic{
+	font-style: italic;
+}
+
+
+.sizeBg{
+
+		height: 4rem;
+		margin: -1rem;
+		padding: 0.5rem;
+		}
+
+.sizeMd{
+		width: 70%;
+		height: auto;
+		margin: 2rem;
+		padding: 2rem;
+}
+
+.sizeSM{
+		width: 50%;
+		height: 3rem;
+		margin: 0.5rem;
+		padding: 0.5rem;
+}
+
+.width-60
+	width: 60%;
+}
+
+.width-40
+	width: 40%;
+}
+
+.width-80{
+	background-color: #B0A5AD;
+	}
+
+.sizeSm{
+		width: 30%;
+		height: auto;
+		margin: 2rem;
+		padding: -2rem;
+}
+ 	
+.textHex{
+	color: #5B4E5B;
+}
+
+.textSm{
+		font-size: 1rem ;
+}
+
+.textMd{
+		font-size: 3rem ;
+}
+
+.textBg{
+		font-size: 5rem ;
+}
+
+.alineaElementos{
+	margin-left: 1rem;
+}
+

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TuCasa 365°</title>
+	<link rel="stylesheet" href="css/Style.css">
+</head>
+	<div class="contentedor1">
+		<body>
+			<nav class="botonera" id="header">
+				<a href="index.html">
+					<img src="img/logo.jpg" class="logoMargin" alt="logo de Tucasa" >
+				</a>
+				<ul>
+					<li><a href="paginas/Tu-Credito.html">Tu credito</a></li>
+					<li><a href="paginas/La-Obra.html">La Obra</a></li>
+					<li><a href="paginas/Deco-y-Arreglos.html">Deco y Arreglos</a></li>
+					<li><a href="paginas/Inverti-mientras-Construis.html">Inverti mientras Construis</a></li>
+					<li><a href="#Contacto">Contacto</a></li>
+				</ul>
+			</nav>
+			<div id="video" class=" perfilForm videoHeader textCenter">
+				<article class="width-40" >
+					<table >
+						<tr>
+							<td>
+								<h3 class="videoTitle">Tu Casa</h3>
+							</td>
+						</tr>
+						<tr>
+							<td >
+								<iframe src="https://www.youtube.com/embed/v6k3w-PlbG8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="videoFormat"></iframe> 
+							</td>
+						</tr>
+					</table>
+				</article>
+			</div>
+			<main id="main">
+				<section class="width-40 nosotrosAlign" >
+					<h1 class="bgDark textCenter titleFormat">Quienes somos</h1>	
+						<article class="textFormat">			
+							<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, aspernatur quis nihil. Voluptates reiciendis adipisci eos minus. Autem est, omnis nam mollitia nobis. Cum cumque ex fugiat sed expedita ipsum?
+							<span class="textBold">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Similique ipsa deserunt minima eum, soluta, reiciendis suscipit rem, accusantium aliquid rerum repellendus recusandae accusamus, temporibus nobis debitis.</span> Minima eos quis libero.</p>
+						</article>			
+					<h2 class="bgLight textCenter titleFormat">Que ofrecemos</h2>
+						<article  class="textFormat" >
+								<p>Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Quis sunt maxime quos, numquam aliquam impedit id praesentium nulla recusandae nam ullam. Omnis ab, totam reiciendis a! Mollitia laudantium praesentium minus?</p>
+						</article>
+					</section>
+			</main>
+			<div>
+				<section id="formulario" class="alineaElementos">
+					<article>
+							<h3 class="bgMedium titleFormat2">Escribinos a TuCasa 365°</h3> 
+							 <!--inicia el formulario-->
+								 <form action="Formulario-TuCredito.php" method="post" id="Contacto" class="width-40 alineaFormulario">
+									<div class="formularioDiv">
+										<fieldset class="formularioForm formPersFormat">
+											<legend class="titleFormSmall">Datos Personales</legend>
+											<label for="Nombre">Nombre y Apellido</label>
+											<input type="text" placeholder="Johanna Antonini" name="nombre" id="nombre">
+											<label for="Telefono">Telefono</label>
+											<input type= "Telefono" placeholder="01155555555" name="Telefono" id="Telefono">
+											<label for="email">Email</label>
+											<input type= "email" placeholder="mail@mail.com" name="email" id="email">
+										</fieldset>
+										<fieldset class="helpForm formHelpFormat">
+											<div >
+											<legend class="titleFormSmall">Servicios</legend>
+											<select  class="textOption" name="servicio" id="servicio"> 
+												<option class="textOption"value="Tu Credito">Tu Credito</option>
+												<option class="textOption"value="La Obra">La Obra</option>
+												<option class="textOption"value="Deco y Arreglos">Deco y Arreglos</option>
+												<option class="textOption"value="Inversioness">Inversiones</option>
+											</select>
+											</div>
+											<div class="titleFormSmall1">
+											<legend class="titlecontacto" >Como te contactamos</legend>
+											<div class="caja2 ">
+												<div id="email"> 
+													<label for="Envio"><img src="img/email.jpg" class="sizeBg"  alt="Email">
+															</label>
+												</div>
+												<div id="selector1">
+													<input type="radio" name="Envio" id="Contacto" value="Email" >
+												</div>
+												<div class="sizeSm" id="telefono" >
+													<label for="Telefono"><img src="img/Telefono.jpg" class="sizeBg" alt="Telefono" ></label>
+												</div>
+												<div id="selector2">
+													<input type="radio" name="Envio" id="contacto" value="Telefono">
+												</div>
+											</div>
+											</div>
+										</fieldset>	
+									</div>			
+								</form>
+					</article>	
+				</section>
+			</div>	
+			<div>
+				<section id="formulario2" class="formularioDiv2">
+		 			<article class="width-80">	
+							<fieldset >
+								<label class="textLeft textBold textItalic" for="mensaje">Como podemos ayudarte</label> 
+										<textarea class="titleImputFormat"name="mensaje" id="mensaje"></textarea>
+											<div class="botonFormulario">
+												<div>
+													<input type="reset" value="Cancelar">
+												</div>
+												<div>
+													<input type="submit" value="Enviar">
+												</div>
+											</div>	
+							</fieldset>		
+					</article>	
+				</section>
+			</div>				
+			<footer class="footer" id="footer">
+				<div >
+					<h3 class="footerTitle" >Nuestras Redes</h3>
+						<div>
+							<a href="https://facebook.com" target="_blank">
+								<img src="img/facebook.png"  alt="Seguinos en Facebook"  class="footImg" >
+							</a>
+							<a href="https://twitter.com" target="_blank">
+								<img src="img/instagram.jpg"  alt="Seguinos en  Instagram" class=" footImg" >
+							</a>
+							<a href="https://twitter.com" target="_blank">
+								<img src="img/twitter.png"  alt="Seguinos en  twitter"class=" footImg">
+							</a>
+						</div>
+				</div>
+			</footer>	
+		</body>
+	</div>
+</html>
