@@ -12,9 +12,9 @@
 </head>
 	<!--<div class="cajaB">-->
 	<body>
-			<nav class="navbar navbar-expand-lg navbar-light fondoIndex sticky-top">
-  				<div class="container-fluid">
-				<a class="navbar-brand" href="index.html">
+		<nav class="navbar navbar-expand-lg navbar-light fondoIndex sticky-top">
+  			<div class="container-fluid">
+				<a class="navbar-brand" href="../index.html">
 					<img src="../img/logo.jpg" class="logoMargin" alt="logo de Tucasa" >
 				</a>
 				<button class="navbar-toggler bg-light p-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,34 +28,58 @@
 						<li class="nav-item opciones"><a class="nav-link"  href="Inverti-mientras-Construis.html">Inverti mientras Construis</a></li>
 						<li class="nav-item opciones"><a class="nav-link" href="../Index.html#Contacto">Contacto</a></li>
 					</ul>
+				</div>
 			</div>
-		</div>
-			</nav>
+		</nav>
 		<header>
 			<div class="titleInverti" id="imagen2">
 				<h1 class="textCenter titleInversionesFormat">Tus Inversiones</h1>
-					<img src="../img/Inversiones.jpg"  alt="Inversiones" class="animationInversion inversImgFormat alignImg" >
-			</div>	
+					<img src="../img/Inversiones.jpg"  alt="Inversiones" class="img-fluid animationInversion inversImgFormat alignImg" >
+			</div>
+		</header>
 	<main>
-		<div class="perfilForm" id="tipo" >
-			<section class="listProfesionalFormat" >
-				<h2 class="textLeft bgMedium titleFormat perfilMargin2">Tipos de inversiones </h2>
-					<ul class="textLeft sizeBg">
-						<li class="heightTipos">Plazo Fijo</li>
-						<li class="heightTipos">FCI</li>
-						<li class="heightTipos">Bonos y Acciones</li class="heightTipos">
-						<li>Criptomonedas</li>
-					</ul>
-			</section>
+		<section >
+		<div class="container-fluid">
+		<div class="row">
+			<h2 class="textLeft bgMedium titleFormat perfilMargin">Tipos de inversiones </h2>
+				<article class="col-md-5 col-lg-4">
+					<div class="card" style="width: 18rem;">
+  						<img src="../img/PlazoFijo.jpg" class="card-img-top" alt="PlazoFijo">
+  							<div class="card-body">
+    							<h5 class="card-title">Plazo Fijo</h5>
+    							<a href="#" class="btn btn-primary">Más info</a>
+ 					 		</div>
+					</div>
+				</article>
+				<article class="col-md-4 col-lg-4">
+					<div class="card" style="width: 18rem;">
+ 						<img src="../img/Bonos.png" class="card-img-top" alt="Bonos">
+ 						<div class="card-body">
+   							<h5 class="card-title">Bonos y 	Acciones</h5>
+   							<a href="#" class="btn btn-primary">Más info</a>
+ 						</div>
+					</div>
+				</article>
+				<article class="col-md-3 col-lg-4">
+					<div class="card" style="width: 18rem;">
+  						<img src="../img/Criptomonedas.jpg" class="card-img-top" alt="Criptomonedas">
+  						<div class="card-body">
+   							<h5 class="card-title">Criptomonedas</h5>
+   							<a href="#" class="btn btn-primary">Más info</a>
+					 	</div>
+					 </div>
+				</article>
 		</div>
-		<div id="interes">
-			<section>
+		</div>
+		</section>	
+		<section>
+			<div id="interes">
 				<h2 class="textLeft bgMedium titleFormat perfilMargin">Perfil Inversor</h2>
 				<!-- inicia el formulario -->
 					<form action="Formulario-Perfil-Inversor.php" method="post">
 						<fieldset  class="formPersFormat textCenter ajustePerfil">
 							<legend class="titleFormMd textCenter">Que tipo de inversiones te interesan</legend>
-								<label for="Corto Plazo">Corto Plazo</label>
+								<label for="Corto Plazo" class="textoInversion">Corto Plazo</label>
 								<input type="checkbox" name="Corto Plazo" id="Corto Plazo" value="Corto Plazo">
 						
 								<label for="Mediano Plazo">Mediano Plazo</label>
@@ -66,9 +90,8 @@
 						</fieldset>				
 					</form>
 				<!-- cierra el formulario -->
-			</section>
-		</div>
-		</div>
+			</div>
+		</section>
 	</main>
 		<div >
 			<footer class="footer" id="footer2">
@@ -85,11 +108,9 @@
 					</a>
 				</div>
 			</footer>
-				<!-- Optional JavaScript; choose one of the two! -->
 
     		<!-- Option 1: Bootstrap Bundle with Popper -->
     		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 		</div>
 	</body>
-	</div>
 </html>

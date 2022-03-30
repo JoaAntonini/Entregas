@@ -424,12 +424,12 @@ body {
 /*------------------------Deco y arreglos media querie-------*
 /* 320*/
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:0px) {
 	.cajaA{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 85vw;
-	grid-template-rows: 13vh 23vh 20vh 17vh 18vh;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 	grid-template-areas: "header1" "imagen" 
 	"deco" "profesionales" "footer1";
 	grid-gap: 2rem ;
@@ -716,8 +716,8 @@ body {
 	.cajaB{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 85vw;
-	grid-template-rows: 13vh 23vh 20vh 17vh 18vh;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 	grid-template-areas: "header2" "imagen2" 
 	"tipo" "interes" "footer2";
 	grid-gap: 2rem ;
@@ -758,7 +758,7 @@ body {
 		height: 12rem;
 	}
 
-	#tipo{
+	/*#tipo{
 	font-size: 1rem;
 	margin-left: 2rem;
 	display: flex;
@@ -782,7 +782,7 @@ body {
     	justify-content: space-evenly;
     	align-items: center;
    	 width: 171%;
-   	}
+   	}*/
 
    	#interes{
    		margin-left: 3rem;
@@ -823,8 +823,8 @@ body {
 @media only screen and (min-width:768px){
 	.cajaB{
 		display: grid;
-		grid-template-columns: 80vw 20vw;
-		grid-template-rows:18h 50vh 30vh 25vh 15vh; 
+		grid-template-columns: auto;
+		grid-template-rows:auto; 
 		grid-template-areas: 
 		"header2 header2" 
 		"imagen2 imagen2"
@@ -881,7 +881,7 @@ body {
 		height: 23rem;
 		}
 
-		#tipo .textLeft.bgMedium.titleFormat.perfilMargin2{
+		/*#tipo .textLeft.bgMedium.titleFormat.perfilMargin2{
 			font-size: 3rem;
 			text-align: center;
 			width: 114%;
@@ -894,19 +894,19 @@ body {
 			list-style-type: square;
 			width: 156%;
 			background-color: rgba(224, 200, 188, 0.3);
-		}
-		
+		}*/
+
 		#interes .textLeft.bgMedium.titleFormat.perfilMargin{
 			font-size: 3rem;
 			background-color: #E8E3C8;
 			border: transparent;
 			text-align: center;
-			width: 80%;
+			width: 69%;
 
 		}
 
 		#interes .formPersFormat.textCenter.ajustePerfil{
-		font-size: 3rem;
+		font-size: 2rem;
 		}
 
 }
@@ -914,12 +914,12 @@ body {
 /*-------------320 obra ------------------*/
 
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:0px) {
 	.cajaC{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 85vw;
-	grid-template-rows: 11vh 23vh 20vh 17vh 17vh 18vh;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 	grid-template-areas: "header3" "imagen3" 
 	"materiales" "profesionales3" "convenio" "footer3";
 	grid-gap: 2rem ;
@@ -942,7 +942,7 @@ body {
 		margin-left: 2rem;
 	}
 
-	#imagen3{
+	/*#imagen3{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -963,20 +963,21 @@ body {
 	
 	#imagen3 .obraImgFormat{
 	margin-top: -1.5rem;
-	}
+	}*/
 
 	#materiales .titleMaterialesFormat{
 		font-size: 2rem;
 		width: 86%;
 		height: 5rem;
-		margin-top: -1rem;
+		margin-top:  1rem;
 		padding-top: 1rem;
-		margin-left: 3rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
 	#materiales .tableMateriales{
 		font-size: 1rem;
-		margin-left: 3.4rem;
+		/*margin-left: 3.4rem;*/
 		padding: 0.1rem;
 		align-items: center;
 		align-content: center;
@@ -999,7 +1000,7 @@ body {
 		font-size: 2rem;
 		width: 86%;
 		height: 5rem;
-		margin-top: -1rem;
+		margin-top: 1rem;
 		padding-top: 1rem;
 		margin-left: 3.4rem;
 	}
@@ -1099,7 +1100,7 @@ body {
 		text-decoration: none;
 	}
 
-	#imagen3{
+	/*#imagen3{
 		width: 112%;
 		height: 15rem;
 	}
@@ -1114,7 +1115,7 @@ body {
 		font-size: 3rem;
 		border: transparent;
 	}
-
+*/
 	#materiales .titleMaterialesFormat{
 		margin-top: 6rem;
 		background-color: #96A9B5;
@@ -1145,7 +1146,7 @@ body {
 
  	#footer3{
 	height: 20rem;
-	margin-left: 5rem;
+	margin-left: 0rem;
 	display: flex;
  	flex-direction: row;
  	justify-content: space-between;
@@ -1165,12 +1166,12 @@ body {
 
 /*-------------320 tu credito -----------------------*/
 
-@media only screen and (min-width:320px) {
+@media only screen and (min-width:0px) {
 	.cajaD{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 85vw;
-	grid-template-rows: 11vh 23vh 20vh 17vh 17vh 18vh;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 	grid-template-areas: "header4" "imagen4" 
 	"lineas" "requisitos" "documentacion" "footer4";
 	grid-gap: 2rem ;
@@ -1245,9 +1246,14 @@ body {
 
 	#requisitos .titleMaterialesFormat{
 		font-size: 3rem;
+		width: 100%;
+		align-content: center;
+		text-align: center;
+		align-items: center;
 		border: transparent;
-		margin-top: -2rem;
-		margin-left: 7rem;
+		margin-top: -3rem;
+		margin-bottom: 0rem;
+		/*margin-left: -5rem;*/
 		text-decoration: underline;
 		text-decoration-color: violet;
 	}
@@ -1263,9 +1269,14 @@ body {
 
 	#documentacion .titleMaterialesFormat{
 		font-size: 3rem;
+		width: 100%;
+		align-content: center;
+		text-align: center;
+		align-items: center;
 		border: transparent;
-		margin-top: -2rem;
-		margin-left: 7rem;
+		margin-top: -1rem;
+		margin-bottom: 0rem;
+		/*margin-left: -5rem;*/
 		text-decoration: underline;
 		text-decoration-color: blue;
 	}
@@ -1310,12 +1321,12 @@ body {
 }
 
 
-/*---------768 en adelante obra -------------*/
+/*---------768 en adelante credito -------------*/
 @media only screen and (min-width:768px){
-	.cajaC{
+	.cajaD{
 		display: grid;
-		grid-template-columns: 80vw 20vw;
-		grid-template-rows:18h 50vh 30vh 25vh 25vh 15vh; 
+		grid-template-columns: auto;
+		grid-template-rows:auto; 
 		grid-template-areas: "header4 header4" 
 		"imagen4 imagen4" 
 		"lineas lineas" 
@@ -2031,6 +2042,15 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 	font-size: 5rem ;
 }
 
+.perfilForm3{
+	width: 100%;
+}
+
+.alineaCheck{
+	margin-left: 5rem;
+	margin-top: -2rem;
+}
+
 /*----------------Deco y Arreglos------*/
 
 
@@ -2118,7 +2138,7 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 
 
 .ajustePerfil{
-	width: 80%;
+	width: 69%;
 }
 
 .heightTipos{
@@ -2126,17 +2146,20 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 }
 
 .titleFormMd{
-	width: 80%;
+	width: 100%;
 	height: auto;
 	font-size: 2rem;
 	text-align: center;	
-	margin: 2rem;
+	margin-top: 0rem;
 	padding: 2rem;
 	font-weight: 500 ;
 	color: black;
 	background-color: rgba(77, 84, 84, 0.9);
 }
 
+.textoInversion{
+	margin-top: 2rem;
+}
 
 .titleInversionesFormat{
 	width: 40%;
