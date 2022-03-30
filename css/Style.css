@@ -25,12 +25,12 @@ body {
 /*----------------grid----------------------*/
 
 /* mobile index 1 columna 6 filas*/
-@media only screen and (min-width:320px) {
+/*@media only screen and (min-width:320px) {
 	.contentedor1{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 85vw;
-	grid-template-rows: 15vh 52vh 36vh 40vh 18vh 20vh;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 	grid-template-areas: "header" "main" 
 	"video" "formulario" "formulario2" "footer";
 	}
@@ -40,8 +40,8 @@ body {
 @media only screen and (min-width:768px) {
 		.contentedor1{
 			display: grid;
-			grid-template-columns: 60vw 40vw;
-			grid-template-rows: 15vh 43vh 50vh 15vh 15vh;	
+			grid-template-columns: auto;
+			grid-template-rows: auto;	
 			grid-template-areas: 
 			"header header"
 			"main video"
@@ -83,7 +83,7 @@ body {
 
 		.width-40.nosotrosAlign{
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		margin-left: 1rem;
 		margin-top: 0rem;
 		height: 30rem;
@@ -114,7 +114,7 @@ body {
 
 		.perfilForm.videoHeader.textCenter{
 			display: flex;
-			flex-direction: column;
+			flex-direction: row;
 			align-content: flex-start;
 			margin-top: 13rem;
 			margin-right: 10rem;
@@ -284,12 +284,12 @@ body {
 
 /* media querie 1 index 1024 3columnas y 4 filas*/
 
-@media only screen and (min-width:1024px) {
+/*@media only screen and (min-width:1024px) {
 	.contentedor1{
 	width: 100%;
 	display: grid;
-	grid-template-columns: 60vw 40vw;
-	grid-template-rows: 15vh 67vh 42vh 40vh 20vh ;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
 	grid-template-areas: "header header" "main video"
 	"formulario formulario" 
 	"formulario formulario2" 
@@ -314,14 +314,15 @@ body {
 
 	.width-40.nosotrosAlign{
 		margin-top: 2rem;
-		margin-left: 5rem;
+		margin-left: 2rem;
+		margin-right: 2rem;
 		margin-bottom: 2rem;
-		height: 39rem;
+		height: 43rem;
 	}
 
 	.bgDark.textCenter.titleFormat{
 		width: 93%;
-		margin-top: -1rem;
+		margin-top: 2rem;
 		margin-bottom: 2rem;
 		margin-left: 5rem;
 	}
@@ -329,7 +330,7 @@ body {
 	article.textFormat{
 		font-size: 1.5rem;
 		font-weight: 300;
-		height: 50rem;
+		height: 18rem;
 		margin-left: 1rem;
 		line-height: 3rem;
 		text-align: justify;
@@ -415,7 +416,7 @@ body {
 	margin-top: 1rem;
 	margin-right: 8rem;
 	justify-items: center;
-	justify-content: start;
+	justify-content: space-around;
 	align-items: center;
 	align-content: center;
 
@@ -474,8 +475,8 @@ body {
 
 
 	.titleMaterialesFormat.bgMedium{
-		width: 107%;
-		margin-left: 2rem;
+		width: 93%;
+		margin-left: 1rem;
 	}
 
 	#deco .formRubro{
@@ -633,8 +634,8 @@ body {
  		flex-direction: row;
  		flex-wrap: wrap;
  		justify-content: space-between;
- 		margin-top: 2rem;
- 		width: 100%; 	
+ 		margin-top: 1rem;
+ 		width: 80%; 	
  		font-size: 2.3rem;}
 
  	#footer1{
@@ -1554,11 +1555,16 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 				font-size: 0.9rem ;
 			   margin-left: 1rem;
 			}
+		.opciones{
+			font-size: 2rem;
+			/*text-align: right;*/
+		}	
 
 		.opciones:hover{
 				transform: translateY(-4px);
 				cursor: pointer;
 				transition: all 2s;
+				font-size: 3rem;
 		}	
 
 			.botonera  ul li a{
@@ -1610,7 +1616,7 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: space-between; 
+	align-content: center; 
 	flex-direction: column;
 	align-items: center;
 	line-height: 2rem;
@@ -1620,32 +1626,40 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 .videoTitle	{
 	color:  black;
 	font-weight: 500;
-	margin-top: 5.5rem;
-	font-size: 2rem ;
+	margin-top: -2rem;
+	font-size: 1.5rem ;
 	padding: 0rem;
 	text-align: center;
-	height: 0rem;
+	height: 3rem;
 	line-height: 4rem;
-	margin-left: 0rem;
+	margin-left: -10rem;
 }
-
-
 .videoFormat{
-	width: 120%;
+	width: 80%;
 	padding: 2rem;
-	height: 15rem;
-	margin-left: 6rem;
-	margin-top: 1rem;
+	height: 18rem;
+	margin-left: 0rem;
+	margin-top: 2rem;
+	margin-bottom: 7rem;
 	align-items: center;
 }
-.videoFormat:hover{
+
+.marginRight{
+	margin-right: 2rem;
+}
+
+.videoFormat2{
+	width: 80%;
+	align-items: center;
+}
+.videoFormats:hover{
 	transform: scale(1.5);
 }
 
 
 .videoHeader{
-	width: 60%;
-	height: 2rem;
+	width: 90%;
+	height: 15rem;
 	padding: 0rem;
 	margin: 1.5rem;
 }
@@ -1660,7 +1674,7 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 	/*margin-left: 60rem;
 	margin-top: -3rem;lo comento para mobile first*/
 	display:  flex; 
-	flex-direction: column;
+	flex-direction: row;
 	/*flex-wrap: wrap;lo comento para mobile first*/
 	/*justify-content: flex-start;lo comento para mobile first*/
 	/*align-items: flex-end;lo comento para mobile first*/
@@ -1669,27 +1683,29 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 }
 
 .titleFormat{
-	width: 60%;
-	margin: 1rem;
-	padding: 1rem;
+	width: 80%;
+	margin-top: 0rem;
+	padding: 0.5rem;
 	color:  black;
 	font-weight: 500;
 	font-size: 2rem ;
 }
 
 .titleFormat2{
-	width: 60%;
-	margin: 0.5rem;
+	width: 92%;
+	height: 4rem;
+	margin: 1rem;
 	padding: 0.5rem;
 	color:  black;
 	font-weight: 500;
 	font-size: 1.5rem ;
 	line-height: 2rem;
+	text-align: center;
 }
 
 
 .textFormat{
-	width: 100%;
+	width: 80%;
 	height: auto;
 	padding: 1rem;
 	font-size: 0.8rem;
@@ -1743,33 +1759,33 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	margin-top: 2rem;
+	margin-top: 4rem;
 	/*align-content: space-between; lo comento para mobile first*/
 }
 
 .titleFormSmall{
-	width: 75%;
-	height: 4rem;
+	width: 65%;
+	height: 3rem;
 	font-size:1rem;
 	text-align: center;	
 	margin-top: -2.5rem;
-	padding: 0.5rem;
+	padding: 0rem;
 	background-color: rgba(77, 84, 84, 0.9);
 }
 
 .titleFormSmall1{
 	width: 85%;
-	height: 4rem;
+	height: 2rem;
 	font-size:1rem;
 	text-align: center;	
 	margin-top: 1.5rem;
-		padding: 1.5rem;
+	padding: 0rem;
 	background-color: rgba(77, 84, 84, 0.9);
 }
 
 .formPersFormat{		
-	width: 40%;
-	height: 19rem;
+	width: 100%;
+	height: 13rem;
 	margin: 0.5rem;
 	padding: -3.5rem;
 	font-size: 1rem;
@@ -1778,8 +1794,8 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 }
 
 .formHelpFormat{		
-	width: 35%;
-	height: 8rem;
+	width: 80%;
+	height: 4rem;
 	border: 0.1rem solid darkblue;
 	margin-top: 1.8rem;
 	margin-right: 2rem;
@@ -1897,6 +1913,7 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 
 .footerTitle{
 	color: #311D63;
+	margin-top: 4rem;
 	font-size: 2rem;
 	justify-content: center;
 
@@ -2026,7 +2043,7 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 }
 
 .formRubro{
-	width: 40%;
+	width: 80%;
 	height: auto;
 	font-size: 2rem;
 	text-align: center;	
@@ -2049,7 +2066,7 @@ background: linear-gradient(90deg, rgba(2,2,29,0.5945728633250176) 1%, rgba(197,
 
 .textOption{
 	font-family: 'Yeseva One', cursive;
-	font-size: 1rem ;
+	font-size: 1.3rem ;
 	color: #4B4C4B;
 }
 
@@ -2191,6 +2208,10 @@ text-align: left;
 		height: 3rem;
 		margin: 0.5rem;
 		padding: 0.5rem;
+}
+
+.marginBottom{
+	margin-bottom: 3rem;
 }
 
 .width-60
